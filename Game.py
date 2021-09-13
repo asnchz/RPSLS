@@ -1,3 +1,5 @@
+from AI import Ai
+
 class Game:
     def __init__(self):
         pass
@@ -16,10 +18,12 @@ class Game:
         print("Lizard eats Paper")
         print("Paper disproves Spock")
         print("Spock vaporizes Rock")
+        
 
-        playmode= input("how many humans will be playing")
-        if playmode== 1:
-            print("singleplayer")
+        
+
+
+
             
         elif playmode== 2:
             print("multiplayer")
@@ -30,6 +34,13 @@ class Game:
 
     
 
-    player_gesture= input("which gesture do you choose?")
+#     player_gesture= input("which gesture do you choose?")
 
-
+# playmode= input("how many humans will be playing")
+#         if playmode== 1:
+#             print("singleplayer")
+#             user_gesture= input("which gesture do you choose?")
+#             if user_gesture== rand_gest:
+#                 print("you tied")
+#             else:
+#                 pass
