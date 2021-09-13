@@ -16,3 +16,14 @@ class Game:
         print("Lizard eats Paper")
         print("Paper disproves Spock")
         print("Spock vaporizes Rock")
+
+        playmode= input("how many humans will be playing")
+        if playmode== 1:
+            print("singleplayer")
+            
+        elif playmode== 2:
+            print("multiplayer")
+            
+        else:
+            print ("thats not an option. Try again.")
+
