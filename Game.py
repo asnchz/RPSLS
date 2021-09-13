@@ -27,3 +27,8 @@ class Game:
         else:
             print ("thats not an option. Try again.")
 
+    gestures= ["rock", "paper", "scissors", "lizard", "spock"]
+
+    player_gesture= input("which gesture do you choose?")
+
+
