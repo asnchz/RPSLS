@@ -1,6 +1,22 @@
+from AI import Ai
+from Human import Human
+
+
 class Game:
     def __init__(self):
-        pass
+        self.player_one = Human()
+        self.player_two = None
+
+    def run_game(self):
+        # intro
+        self.game_intro()
+        self.player_mode()
+        # game rounds
+
+
+        #end game
+
+        
 
     def game_intro(self):
         print("Welcome to RPSLS!")
@@ -17,12 +33,14 @@ class Game:
         print("Paper disproves Spock")
         print("Spock vaporizes Rock")
 
-        playmode= input("how many humans will be playing")
+    def player_mode(self):
+        print("How many humans will be playing?")
+        playmode = int(input())
         if playmode== 1:
-            print("singleplayer")
-            
+            self.player_one.name = input("please enter your name")
+            self.player_two = Ai()
         elif playmode== 2:
-            print("multiplayer")
+            self.player_two = Human()
             user_one_name= input("enter player ones name")
             user_two_name= input("enter player twos name")
         else:
