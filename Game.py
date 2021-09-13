@@ -23,11 +23,12 @@ class Game:
             
         elif playmode== 2:
             print("multiplayer")
-            
+            user_one_name= input("enter player ones name")
+            user_two_name= input("enter player twos name")
         else:
             print ("thats not an option. Try again.")
 
-    gestures= ["rock", "paper", "scissors", "lizard", "spock"]
+    
 
     player_gesture= input("which gesture do you choose?")
 
