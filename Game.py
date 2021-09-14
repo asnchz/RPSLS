@@ -16,7 +16,7 @@ class Game:
 
         #end game
 
-        
+
 
     def game_intro(self):
         print("Welcome to RPSLS!")
@@ -39,59 +39,75 @@ class Game:
         print("How many humans will be playing?")
         playmode = int(input())
         if playmode== 1:
-            self.player_one.name = input("please enter your name")
+            self.player_one.name = input("Player 1, enter your name")
             self.player_two = Ai()
-            if rand_gesture== "rock" & choose_gesture=="scissors":
-            
-            elif rand_gesture== "scissors" & choose_gesture=="rock":
-            
-            elif rand_gesture== "rock" & choose_gesture=="paper":
-
-            elif rand_gesture== "paper" & choose_gesture=="rock":
-            
-            elif rand_gesture== "rock" & choose_gesture=="lizard":
-            
-            elif rand_gesture== "lizard" & choose_gesture=="rock":
-            
-            elif rand_gesture== "rock" & choose_gesture=="spock":
-            
-            elif rand_gesture== "spock" & choose_gesture=="rock":
-            
-            elif rand_gesture== "paper" & choose_gesture=="scissors":
-            
-            elif rand_gesture== "scissors" & choose_gesture=="paper":
-            
-            elif rand_gesture== "paper" & choose_gesture=="lizard":
-            
-            elif rand_gesture== "lizard" & choose_gesture=="paper":
-
-            elif rand_gesture== "paper" & choose_gesture=="spock":
-            
-            elif rand_gesture== "spock" & choose_gesture=="paper":
-
-            elif rand_gesture== "scissors" & choose_gesture=="lizard":
-            
-            elif rand_gesture== "lizard" & choose_gesture=="scissors":
-
-            elif rand_gesture== "scissors" & choose_gesture=="spock":
-            
-            elif rand_gesture== "spock" & choose_gesture=="scissors":
-
-            elif rand_gesture== "lizard" & choose_gesture=="spock":
-
-            elif rand_gesture== "spock" & choose_gesture=="lizard":
-
-            elif rand_gesture== "" & choose_gesture=="":
-
-            elif rand_gesture== "" & choose_gesture=="":    
-
         elif playmode== 2:
             self.player_two = Human()
-            user_one_name= input("enter player ones name")
-            user_two_name= input("enter player twos name")
+            self.player_two.name = input("Player 2, enter your name")
         else:
             print ("thats not an option. Try again.")
 
+
+    def play(self):
+            if self.player_one.chosen_gesture == self.player_two.chosen_gesture:
+                print("Its a tie")
+
+            elif self.player_one.chosen_gesture == "rock" & self.player_two.chosen_gesture == "scissors":
+                self.player_one.score += 1
+                print(self.player_one.name + " wins this round!")
+
+            elif self.player_one.chosen_gesture == "scissors" & self.player_two.chosen_gesture =="rock":
+                self.player_two.score += 1
+                print(self.player_two.name + " wins this round!")
+
+            elif self.player_one.chosen_gesture == "rock" & self.player_two.chosen_gesture =="paper":
+                self.player_two.score += 1
+                print(self.player_two.name + " wins this round!")
+
+            elif self.player_one.chosen_gesture == "paper" & self.player_two.chosen_gesture =="rock":
+                    self.player_one.score += 1
+                    print(self.player_one.name + " wins this round!")
+
+            elif self.player_one.chosen_gesture == "rock" & self.player_two.chosen_gesture =="lizard":
+            
+            elif self.player_one.chosen_gesture == "lizard" & self.player_two.chosen_gesture =="rock":
+            
+            elif self.player_one.chosen_gesture == "rock" & self.player_two.chosen_gesture =="spock":
+            
+            elif self.player_one.chosen_gesture == "spock" & self.player_two.chosen_gesture =="rock":
+            
+            elif self.player_one.chosen_gesture == "paper" & self.player_two.chosen_gesture =="scissors":
+            
+            elif self.player_one.chosen_gesture == "scissors" & self.player_two.chosen_gesture=="paper":
+            
+            elif self.player_one.chosen_gesture == "paper" & self.player_two.chosen_gesture =="lizard":
+            
+            elif self.player_one.chosen_gesture == "lizard" & self.player_two.chosen_gesture =="paper":
+
+            elif self.player_one.chosen_gesture == "paper" & self.player_two.chosen_gesture =="spock":
+            
+            elif self.player_one.chosen_gesture == "spock" & self.player_two.chosen_gesture =="paper":
+
+            elif self.player_one.chosen_gesture == "scissors" & self.player_two.chosen_gesture =="lizard":
+            
+            elif self.player_one.chosen_gesture == "lizard" & self.player_two.chosen_gesture =="scissors":
+
+            elif self.player_one.chosen_gesture == "scissors" & self.player_two.chosen_gesture =="spock":
+            
+            elif self.player_one.chosen_gesture == "spock" & self.player_two.chosen_gesture =="scissors":
+
+            elif self.player_one.chosen_gesture == "lizard" & self.player_two.chosen_gesture =="spock":
+
+            elif self.player_one.chosen_gesture == "spock" & self.player_two.chosen_gesture =="lizard":
+
+            else
+                print ("thats not an option. Try again.")
+
+    def display_winner(self):
+        if self.player_one.score == 2:
+            print(self.player_one.name + " wins the game.")
+        elif self.player_two.score == 2:
+            print(self.player_two.name + " wins the game.")
     
 
 #     player_gesture= input("which gesture do you choose?")
