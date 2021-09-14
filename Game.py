@@ -65,42 +65,74 @@ class Game:
                 print(self.player_two.name + " wins this round!")
 
             elif self.player_one.chosen_gesture == "paper" & self.player_two.chosen_gesture =="rock":
-                    self.player_one.score += 1
-                    print(self.player_one.name + " wins this round!")
+                self.player_one.score += 1
+                print(self.player_one.name + " wins this round!")
 
             elif self.player_one.chosen_gesture == "rock" & self.player_two.chosen_gesture =="lizard":
-            
+                self.player_one.score += 1
+                print(self.player_one.name + " wins this round!")
+
             elif self.player_one.chosen_gesture == "lizard" & self.player_two.chosen_gesture =="rock":
-            
+                self.player_two.score += 1
+                print(self.player_two.name + " wins this round!")
+
             elif self.player_one.chosen_gesture == "rock" & self.player_two.chosen_gesture =="spock":
-            
+                self.player_two.score += 1
+                print(self.player_two.name + " wins this round!")
+
             elif self.player_one.chosen_gesture == "spock" & self.player_two.chosen_gesture =="rock":
-            
+                self.player_one.score += 1
+                print(self.player_one.name + " wins this round!")
+
             elif self.player_one.chosen_gesture == "paper" & self.player_two.chosen_gesture =="scissors":
-            
+                self.player_two.score += 1
+                print(self.player_two.name + " wins this round!")
+
             elif self.player_one.chosen_gesture == "scissors" & self.player_two.chosen_gesture=="paper":
-            
+                self.player_one.score += 1
+                print(self.player_one.name + " wins this round!")
+
             elif self.player_one.chosen_gesture == "paper" & self.player_two.chosen_gesture =="lizard":
-            
+                self.player_two.score += 1
+                print(self.player_two.name + " wins this round!")
+
             elif self.player_one.chosen_gesture == "lizard" & self.player_two.chosen_gesture =="paper":
+                self.player_one.score += 1
+                print(self.player_one.name + " wins this round!")
 
             elif self.player_one.chosen_gesture == "paper" & self.player_two.chosen_gesture =="spock":
-            
+                self.player_one.score += 1
+                print(self.player_one.name + " wins this round!")
+
             elif self.player_one.chosen_gesture == "spock" & self.player_two.chosen_gesture =="paper":
+                self.player_two.score += 1
+                print(self.player_two.name + " wins this round!")
 
             elif self.player_one.chosen_gesture == "scissors" & self.player_two.chosen_gesture =="lizard":
-            
+                self.player_one.score += 1
+                print(self.player_one.name + " wins this round!")
+
             elif self.player_one.chosen_gesture == "lizard" & self.player_two.chosen_gesture =="scissors":
+                self.player_two.score += 1
+                print(self.player_two.name + " wins this round!")
 
             elif self.player_one.chosen_gesture == "scissors" & self.player_two.chosen_gesture =="spock":
-            
+                self.player_two.score += 1
+                print(self.player_two.name + " wins this round!")
+    
             elif self.player_one.chosen_gesture == "spock" & self.player_two.chosen_gesture =="scissors":
+                self.player_one.score += 1
+                print(self.player_one.name + " wins this round!")
 
             elif self.player_one.chosen_gesture == "lizard" & self.player_two.chosen_gesture =="spock":
+                self.player_one.score += 1
+                print(self.player_one.name + " wins this round!")
 
             elif self.player_one.chosen_gesture == "spock" & self.player_two.chosen_gesture =="lizard":
+                self.player_two.score += 1
+                print(self.player_two.name + " wins this round!")
 
-            else
+            else:
                 print ("thats not an option. Try again.")
 
     def display_winner(self):
