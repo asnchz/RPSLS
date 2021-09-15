@@ -4,7 +4,7 @@ from Human import Human
 
 class Game:
     def __init__(self):
-        self.player_one = Human()
+        self.player_one = Human
         self.player_two = None
 
     def run_game(self):
@@ -40,6 +40,7 @@ class Game:
         playmode = int(input())
         if playmode== 1:
             self.player_one.name = input("Player 1, enter your name")
+            self.player_one = Human
             self.player_two = Ai()
         elif playmode== 2:
             self.player_two = Human()
@@ -55,7 +56,7 @@ class Game:
             elif self.player_one.chosen_gesture == "rock" & self.player_two.chosen_gesture == "scissors":
                 self.player_one.score += 1
                 print(self.player_one.name + " wins this round!")
-
+               
             elif self.player_one.chosen_gesture == "scissors" & self.player_two.chosen_gesture =="rock":
                 self.player_two.score += 1
                 print(self.player_two.name + " wins this round!")
@@ -142,6 +143,6 @@ class Game:
             print(self.player_two.name + " wins the game.")
     
 
-#     player_gesture= input("which gesture do you choose?")
+
 
 
