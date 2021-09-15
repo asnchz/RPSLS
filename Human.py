@@ -1,17 +1,13 @@
 from Player import Player
-from Game import Game
+
 class Human(Player):
     def __init__(self):
         super().__init__()
 
     def choose_gesture(self):
-        print(self.gestures)
-        player_gesture = input("Pick your gesture")
-        for gesture in self.gestures:
-            if player_gesture == gesture:
-                self.chosen_gesture = player_gesture
-                return self.chosen_gesture
-
+        self.chosen_gesture = input("Pick a gesture: rock, paper, scissors, lizard, spock")
+        if (self.chosen_gesture == " rock" or self.chosen_gesture == " paper" or self.chosen_gesture == " scissors" or self.chosen_gesture == " lizard" or self.chosen_gesture == " spock"):
+            pass
         else:
             print("Not a valid gesture.. try again")
             self.choose_gesture()

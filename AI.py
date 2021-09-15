@@ -6,5 +6,5 @@ class Ai(Player):
         super().__init__()
     
     def choose_gesture(self):
-        rand_gest= random.choice(self.gestures)
-        print(rand_gest)
+        self.chosen_gesture = random.choice(self.gestures)
+        
