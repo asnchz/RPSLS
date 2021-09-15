@@ -52,45 +52,6 @@ class Game:
         print(f"{self.player_one.name} picked {self.player_one.chosen_gesture}")
         print(f"{self.player_two.name} picked {self.player_two.chosen_gesture}")
 
-<<<<<<< HEAD
-=======
-    def play(self):
-            if self.player_one.chosen_gesture == self.player_two.chosen_gesture:
-                print("Its a tie")
-
-            elif self.player_one.chosen_gesture == "rock" & self.player_two.chosen_gesture == "scissors":
-                self.player_one.score += 1
-                print(self.player_one.name + " wins this round!")
-               
-            elif self.player_one.chosen_gesture == "scissors" & self.player_two.chosen_gesture =="rock":
-                self.player_two.score += 1
-                print(self.player_two.name + " wins this round!")
-
-            elif self.player_one.chosen_gesture == "rock" & self.player_two.chosen_gesture =="paper":
-                self.player_two.score += 1
-                print(self.player_two.name + " wins this round!")
-
-            elif self.player_one.chosen_gesture == "paper" & self.player_two.chosen_gesture =="rock":
-                self.player_one.score += 1
-                print(self.player_one.name + " wins this round!")
-
-            elif self.player_one.chosen_gesture == "rock" & self.player_two.chosen_gesture =="lizard":
-                self.player_one.score += 1
-                print(self.player_one.name + " wins this round!")
-
-            elif self.player_one.chosen_gesture == "lizard" & self.player_two.chosen_gesture =="rock":
-                self.player_two.score += 1
-                print(self.player_two.name + " wins this round!")
-
-            elif self.player_one.chosen_gesture == "rock" & self.player_two.chosen_gesture =="spock":
-                self.player_two.score += 1
-                print(self.player_two.name + " wins this round!")
-
-            elif self.player_one.chosen_gesture == "spock" & self.player_two.chosen_gesture =="rock":
-                self.player_one.score += 1
-                print(self.player_one.name + " wins this round!")
->>>>>>> 2d95655129cf06bcb542b3e4ce7f7c19ee377852
-
     def play(self):
         self.player_one.choose_gesture()
         self.player_two.choose_gesture()
